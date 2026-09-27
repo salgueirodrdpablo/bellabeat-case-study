@@ -1,0 +1,5 @@
+# Données brutes : non versionnées (voir data/README.md)
+data/*.csv
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
