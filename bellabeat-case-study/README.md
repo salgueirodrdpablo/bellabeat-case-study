@@ -472,11 +472,19 @@ Chaque utilisateur est classé selon l'heure de son pic d'activité (script D3, 
 
 ## 6. Act : recommandations
 
-**Produit ciblé : l'app Bellabeat**, qui envoie les notifications et centralise les données de tous les produits connectés (Leaf, Time, Spring).
+#### Le produit :
 
-1. **Identifier le segment de chaque utilisatrice dans l'app.** À partir de l'heure de son pic d'activité, l'app classe l'utilisatrice (Early, Midday, Afternoon, Evening ou Late Mover). Les rappels et encouragements sont ensuite envoyés à *son* moment d'activité, plutôt qu'à heure fixe. Argument marketing : « Bellabeat s'adapte à votre rythme ».
-2. **Proposer des défis et des contenus propres à chaque segment.** Par exemple, un programme « matin énergique » pour les Early Movers, des défis week-end pour les Midday Movers (+14 % d'activité le week-end) et des défis « afterwork » pour les Evening Movers. Les campagnes marketing de l'app reprennent ces profils, avec un message différent par cible.
-3. **Relancer les Afternoon Movers.** C'est le segment le moins actif (environ 250 pas/h, avec le pic le plus faible). L'app peut leur proposer des micro-objectifs et des relances douces l'après-midi. Ce segment est aussi une cible prioritaire pour l'abonnement Bellabeat, qui apporte un accompagnement personnalisé.
+**Application Bellabeat :** L’application Bellabeat fournit aux utilisateurs des données de santé liées à leur activité physique, leur sommeil, leur niveau de stress, leur cycle menstruel et leurs habitudes de pleine conscience. Ces données peuvent les aider à mieux comprendre leurs habitudes actuelles et à prendre des décisions favorables à leur santé. L’application Bellabeat se connecte à leur gamme de produits intelligents dédiés au bien-être.
+
+#### La stratégie :
+
+L’objectif serait d’approfondir la personnalisation de l’application en s’appuyant sur les habitudes et comportements observés chez les utilisateurs. L’analyse montre en effet que des recommandations ou objectifs génériques ne sont pas nécessairement adaptés à l’ensemble des profils et peuvent ainsi présenter une pertinence variable selon les utilisateurs.
+
+Dans cette perspective, la segmentation identifiée dans la dernière partie de l’analyse pourrait être intégrée directement à l’expérience utilisateur. Après quelques semaines d’utilisation, chaque utilisateur pourrait être automatiquement associé à un segment en fonction de ses habitudes et de son niveau d’activité. Des objectifs et recommandations spécifiques pourraient alors être définis pour chaque profil, afin de mieux correspondre à ses comportements.
+
+Par exemple, l’analyse montre que les *Late Movers* présentent une activité plus importante le week-end qu’en semaine. Pour ce type de profil, l’application pourrait ainsi proposer davantage d’incitations à l’activité durant les jours de semaine, tout en proposant des objectifs plus ambitieux ou des défis supplémentaires durant le week-end.
+
+La mise en place d’une telle segmentation permettrait ainsi d’aller au-delà de recommandations standardisées en proposant une personnalisation fondée sur les comportements réels des utilisateurs. Cette approche pourrait contribuer à améliorer la pertinence des recommandations, à renforcer l’adéquation des objectifs proposés aux différents profils et, plus largement, à favoriser une expérience utilisateur davantage adaptée aux habitudes individuelles.
 
 ---
 
