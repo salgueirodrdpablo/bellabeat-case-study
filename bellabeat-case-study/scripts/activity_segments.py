@@ -747,13 +747,16 @@ segment_summary = (
             "mean"
         ),
 
-        WeekendVsWeekday=(
-            "WeekendVsWeekday",
-            "mean"
-        )
     )
     .reindex(segment_order)
 )
+
+# Variation calculée à partir des moyennes du segment
+segment_summary["WeekendVsWeekday"] = (
+    segment_summary["WeekendSteps"]
+    / segment_summary["WeekdaySteps"]
+    - 1
+) * 100
 
 # ============================================================
 # EXPORT STATISTIQUES
