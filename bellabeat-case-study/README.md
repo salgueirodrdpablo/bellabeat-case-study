@@ -76,7 +76,7 @@ Il s'agit de **données de seconde main (second-party)**, externes, structurées
 | 8 | Chaque enregistrement d'activité correspond-il à une personne réelle ? | Aucune remarque | — |
 | 9 | Les unités sont-elles cohérentes (BPM et non Hz, par exemple) ? | Aucune remarque | — |
 | 10 | Existe-t-il des combinaisons impossibles ? | Aucune remarque | — |
-| 11 | Y a-t-il des valeurs inattendues (« N/A », « unknown », « - », « error ») ? | `minuteMETs` : des valeurs à 0, ce qui n'a pas de sens | Correction lors de la phase Process |
+| 11 | Y a-t-il des valeurs inattendues (« N/A », « unknown », « - », « error ») ? | `minuteMETs` : des valeurs à 0, ce qui n'a pas de sens. Il y a aussi plusieurs valeurs laissant croire à un non-port de l'appareil (ou problème de batterie) | Correction lors de la phase Process |
 
 ### 2.4 Détail des vérifications
 
