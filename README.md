@@ -164,12 +164,12 @@ Des valeurs de METs à 0 ont été relevées. Une valeur nulle est impossible : 
 
 | # | Constat | Décision |
 |---|---|---|
-| 02 | Formats de date différents (`4/12/2016` et `4/12/2016 7:22:35 AM`) | Conversion au format date lors de la phase Process |
-| 03 | `TotalDistance` et `TrackerDistance` sont presque identiques ; l'écart vient de la méthode de mesure de Fitbit | Ne conserver que `TotalDistance` |
-| 04 | `weightLogInfo`, `sleepDay`, `minuteSleep` et `heartrate_seconds` comptent moins de 25 utilisateurs | Tables non utilisées. Si besoin, chercher d'autres jeux de données sur le poids, le sommeil ou la fréquence cardiaque |
-| 05 | `dailyActivity` contient toutes les données des autres fichiers `dailyXX_merged` | Ne conserver que `dailyActivity_merged.csv` |
-| 06 | Valeurs de METs à 0, incohérentes | Correction de ces valeurs |
-| 07 | Valeurs de METs multipliées par 10 à l'export Fitabase | Division par 10 pour obtenir les vraies valeurs |
+| 01 | Formats de date différents (`4/12/2016` et `4/12/2016 7:22:35 AM`) | Conversion au format date lors de la phase Process |
+| 02 | `TotalDistance` et `TrackerDistance` sont presque identiques ; l'écart vient de la méthode de mesure de Fitbit | Ne conserver que `TotalDistance` |
+| 03 | `weightLogInfo`, `sleepDay`, `minuteSleep` et `heartrate_seconds` comptent moins de 25 utilisateurs | Tables non utilisées. Si besoin, chercher d'autres jeux de données sur le poids, le sommeil ou la fréquence cardiaque |
+| 04 | `dailyActivity` contient toutes les données des autres fichiers `dailyXX_merged` | Ne conserver que `dailyActivity_merged.csv` |
+| 05 | Valeurs de METs à 0, incohérentes | Correction de ces valeurs |
+| 06 | Valeurs de METs multipliées par 10 à l'export Fitabase | Division par 10 pour obtenir les vraies valeurs |
 
 ### 2.6 Stockage
 
@@ -797,6 +797,8 @@ print(df.index[df["METs"] == 0].tolist())
 
 # Remplacer par 10 (les lignes 1065794 et 1075885 reçoivent 19 et 14)
 df.loc[[57419, 279059, 713039, 1076219, 1105799], "METs"] = 10.0
+df.loc[1065794, "METs"] = 19.0
+df.loc[1075885, "METs"] = 14.0
 
 # Mettre à jour le CSV
 df.to_csv(file, index=False)
