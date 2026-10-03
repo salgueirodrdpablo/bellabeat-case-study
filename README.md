@@ -10,7 +10,7 @@
 ```
 ├── README.md      ← étude de cas complète
 ├── scripts/       ← scripts de visualisation
-├── figures/       ← graphiques (PNG)
+├── bellabeat-case-study/figures/       ← graphiques (PNG)
 └── data/          ← instructions pour récupérer les données
 ```
 
@@ -55,7 +55,7 @@ Nous cherchons à **identifier des opportunités en dégageant des tendances dan
 - **Organisation :** chaque fichier CSV est structuré en lignes et en colonnes. Selon les fichiers, la granularité est le jour, l'heure, la minute ou la seconde.
 - **Modèle conceptuel des données (MCD) :**
 
-![Modèle conceptuel des données](bellabeat-case-study/figures/mcd.png)
+![Modèle conceptuel des données](bellabeat-case-study/bellabeat-case-study/figures/mcd.png)
 
 ### 2.2 Biais et crédibilité
 
@@ -349,17 +349,17 @@ L'objectif n'étant pas de comparer les utilisateurs entre eux, l'analyse se con
 
 Premières visualisations des rythmes d'activité (script D1, sorties dans `data/visualizations/`) :
 
-![Profil moyen des pas selon l'heure](figures/visualizations/01_steps_by_hour.png)
+![Profil moyen des pas selon l'heure](bellabeat-case-study/figures/visualizations/01_steps_by_hour.png)
 
-![Calories moyennes selon l'heure](figures/visualizations/02_calories_by_hour.png)
+![Calories moyennes selon l'heure](bellabeat-case-study/figures/visualizations/02_calories_by_hour.png)
 
-![Intensité moyenne selon l'heure](figures/visualizations/03_intensity_by_hour.png)
+![Intensité moyenne selon l'heure](bellabeat-case-study/figures/visualizations/03_intensity_by_hour.png)
 
-![Activité moyenne, jour × heure](figures/visualizations/04_heatmap_day_hour.png)
+![Activité moyenne, jour × heure](bellabeat-case-study/figures/visualizations/04_heatmap_day_hour.png)
 
-![Profil moyen de l'activité sur 24 heures (minute par minute)](figures/visualizations/5_minute_profile.png)
+![Profil moyen de l'activité sur 24 heures (minute par minute)](bellabeat-case-study/figures/visualizations/5_minute_profile.png)
 
-![Top 20 des périodes les plus actives](figures/visualizations/6_top_day_hour.png)
+![Top 20 des périodes les plus actives](bellabeat-case-study/figures/visualizations/6_top_day_hour.png)
 
 **Constat :** ces graphiques font apparaître les **heures d'activité et les heures creuses**, ainsi que les **jours privilégiés**. Ces rythmes sont approfondis dans la section suivante.
 
@@ -367,21 +367,21 @@ Premières visualisations des rythmes d'activité (script D1, sorties dans `data
 
 Visualisations complémentaires et synthèse chiffrée (script D2, sorties dans `data/visualizations_deep_dive/`) :
 
-![Heatmap du nombre moyen de pas par jour et par heure](figures/visualizations_deep_dive/01_heatmap_steps.png)
+![Heatmap du nombre moyen de pas par jour et par heure](bellabeat-case-study/figures/visualizations_deep_dive/01_heatmap_steps.png)
 
-![Heatmap des calories moyennes par jour et par heure](figures/visualizations_deep_dive/02_heatmap_calories.png)
+![Heatmap des calories moyennes par jour et par heure](bellabeat-case-study/figures/visualizations_deep_dive/02_heatmap_calories.png)
 
-![Heatmap de l'intensité moyenne par jour et par heure](figures/visualizations_deep_dive/03_heatmap_intensity.png)
+![Heatmap de l'intensité moyenne par jour et par heure](bellabeat-case-study/figures/visualizations_deep_dive/03_heatmap_intensity.png)
 
-![Heatmap des METs moyens par jour et par heure](figures/visualizations_deep_dive/04_heatmap_mets.png)
+![Heatmap des METs moyens par jour et par heure](bellabeat-case-study/figures/visualizations_deep_dive/04_heatmap_mets.png)
 
-![Profil horaire des pas, semaine vs week-end](figures/visualizations_deep_dive/05_weekday_vs_weekend.png)
+![Profil horaire des pas, semaine vs week-end](bellabeat-case-study/figures/visualizations_deep_dive/05_weekday_vs_weekend.png)
 
-![Heatmap de l'activité horaire de chaque utilisateur](figures/visualizations_deep_dive/06_heatmap_users_hours.png)
+![Heatmap de l'activité horaire de chaque utilisateur](bellabeat-case-study/figures/visualizations_deep_dive/06_heatmap_users_hours.png)
 
-![Distribution de l'heure du pic d'activité](figures/visualizations_deep_dive/07_peak_hour_distribution.png)
+![Distribution de l'heure du pic d'activité](bellabeat-case-study/figures/visualizations_deep_dive/07_peak_hour_distribution.png)
 
-![Profils horaires des utilisateurs les moins et les plus actifs](figures/visualizations_deep_dive/08_user_profiles.png)
+![Profils horaires des utilisateurs les moins et les plus actifs](bellabeat-case-study/figures/visualizations_deep_dive/08_user_profiles.png)
 
 **Résultats chiffrés :**
 
@@ -435,7 +435,7 @@ Chaque utilisateur est classé selon l'heure de son pic d'activité (script D3, 
 | Afternoon Movers | 5 |
 | Late Movers | 1 |
 
-![Répartition des utilisateurs par rythme d'activité](figures/activity_segments/01_segment_sizes.png)
+![Répartition des utilisateurs par rythme d'activité](bellabeat-case-study/figures/activity_segments/01_segment_sizes.png)
 
 **Profil des segments :**
 
@@ -457,13 +457,13 @@ Chaque utilisateur est classé selon l'heure de son pic d'activité (script D3, 
 | Evening Movers | 5553957443 (17 h, 1 291) · 1503960366 (18 h, 1 556) · 4445114986 (18 h, 797) · 8792009665 (18 h, 289) · 1644430081 (19 h, 1 200) · 8053475328 (19 h, 3 467) |
 | Late Movers | 3977333714 (22 h, 1 196) |
 
-![Profils horaires moyens des différents segments](figures/activity_segments/02_segment_hourly_profiles.png)
+![Profils horaires moyens des différents segments](bellabeat-case-study/figures/activity_segments/02_segment_hourly_profiles.png)
 
 **Constat :** chaque segment a un fonctionnement **totalement différent**. Les profils horaires présentent chacun un pic d'activité à un moment distinct de la journée : le matin, la mi-journée, l'après-midi, le soir ou tard le soir.
 
-![Heatmap de l'activité horaire par segment](figures/activity_segments/03_segment_heatmap.png)
+![Heatmap de l'activité horaire par segment](bellabeat-case-study/figures/activity_segments/03_segment_heatmap.png)
 
-![Activité en semaine et le week-end selon le segment](figures/activity_segments/05_segment_weekend.png)
+![Activité en semaine et le week-end selon le segment](bellabeat-case-study/figures/activity_segments/05_segment_weekend.png)
 
 **Constat :** Constat : deux segments sont nettement plus actifs le week-end qu'en semaine. Les Midday Movers (12 utilisateurs) passent de 310 à 336 pas par heure. Les Late Movers passent de 455 à 515, mais ce segment ne compte qu'un seul utilisateur et ne permet aucune conclusion.
 
