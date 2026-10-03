@@ -441,10 +441,10 @@ Chaque utilisateur est classé selon l'heure de son pic d'activité (script D3, 
 
 | Segment | Heure de pic moyenne | Pas au pic (moy.) | Pas/h en semaine | Pas/h le week-end | Variation week-end vs semaine |
 |---|---|---|---|---|---|
-| Early Movers | 7,75 | 1 482,67 | 404,54 | 394,72 | +2,64 % |
-| Midday Movers | 11,25 | 1 066,92 | 310,25 | 335,73 | +14,46 % |
-| Afternoon Movers | 15,40 | 704,60 | 251,54 | 242,78 | −4,21 % |
-| Evening Movers | 18,17 | 1 433,29 | 362,67 | 339,37 | −1,31 % |
+| Early Movers | 7,75 | 1 482,67 | 404,54 | 394,72 | -2,43 % |
+| Midday Movers | 11,25 | 1 066,92 | 310,25 | 335,73 | +8,21 % |
+| Afternoon Movers | 15,40 | 704,60 | 251,54 | 242,78 | −3,48 % |
+| Evening Movers | 18,17 | 1 433,29 | 362,67 | 339,37 | −6,43 % |
 | Late Movers | 22,00 | 1 196,03 | 455,18 | 514,74 | +13,08 % |
 
 **Composition des segments :**
