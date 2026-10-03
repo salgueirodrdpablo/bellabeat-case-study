@@ -4,7 +4,6 @@
 
 > Capstone du **Google Data Analytics Professional Certificate**.
 > Données : [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit) (Kaggle, licence CC0 : domaine public).
-> Notebook Kaggle : *[lien à ajouter]*
 
 **Structure du dépôt**
 
@@ -60,7 +59,7 @@ Nous cherchons à **identifier des opportunités en dégageant des tendances dan
 
 ### 2.2 Biais et crédibilité
 
-Il s'agit de **données de seconde main (second-party)**, externes, structurées et **quantitatives**.
+Il s'agit de **données de troisième main (third-party)**, externes, structurées et **quantitatives**.
 
 ### 2.3 Vérification de l'intégrité des données
 
@@ -183,7 +182,7 @@ Des valeurs de METs à 0 ont été relevées. Une valeur nulle est impossible : 
 
 ### Choix de l'outil
 
-Le traitement est réalisé en **Python avec pandas**. Les fichiers CSV comptent un grand nombre de lignes et de colonnes (plus de 1,3 million de lignes pour les tables à la minute) : un tableur n'est pas adapté à ce volume. Quant à SQL, il aurait été limité pour explorer toutes ces données numériques à la recherche de tendances.
+Le traitement est réalisé en **Python avec pandas**. Les fichiers CSV comptent un grand nombre de lignes et de colonnes (plus de 1,3 million de lignes pour les tables à la minute) : un tableur n'est pas adapté à ce volume. Python suffisait pour des fichiers CSV sans base de données..
 
 ### 3.1 Suppression des lignes vides
 
@@ -466,7 +465,7 @@ Chaque utilisateur est classé selon l'heure de son pic d'activité (script D3, 
 
 ![Activité en semaine et le week-end selon le segment](figures/activity_segments/05_segment_weekend.png)
 
-**Constat :** l'écart entre semaine et week-end est le plus marqué chez les **Late Movers** : leur activité passe de 455 pas par heure en semaine à 515 le week-end, soit environ 60 pas de plus par heure. Ce segment ne compte qu'un seul utilisateur.
+**Constat :** Constat : deux segments sont nettement plus actifs le week-end qu'en semaine. Les Midday Movers (12 utilisateurs) passent de 310 à 336 pas par heure. Les Late Movers passent de 455 à 515, mais ce segment ne compte qu'un seul utilisateur et ne permet aucune conclusion.
 
 ---
 
@@ -482,9 +481,11 @@ L’objectif serait d’approfondir la personnalisation de l’application en s�
 
 Dans cette perspective, la segmentation identifiée dans la dernière partie de l’analyse pourrait être intégrée directement à l’expérience utilisateur. Après quelques semaines d’utilisation, chaque utilisateur pourrait être automatiquement associé à un segment en fonction de ses habitudes et de son niveau d’activité. Des objectifs et recommandations spécifiques pourraient alors être définis pour chaque profil, afin de mieux correspondre à ses comportements.
 
-Par exemple, l’analyse montre que les *Late Movers* présentent une activité plus importante le week-end qu’en semaine. Pour ce type de profil, l’application pourrait ainsi proposer davantage d’incitations à l’activité durant les jours de semaine, tout en proposant des objectifs plus ambitieux ou des défis supplémentaires durant le week-end.
+Par exemple, l'analyse montre que les Midday Movers, le segment le plus représenté (12 utilisateurs sur 32), sont plus actifs le week-end qu'en semaine : environ 336 pas par heure contre 310. Pour ce type de profil, l'application pourrait proposer davantage d'incitations à l'activité durant les jours de semaine, par exemple un rappel avant la pause de midi, et des objectifs plus ambitieux ou des défis supplémentaires le week-end.
 
 La mise en place d’une telle segmentation permettrait ainsi d’aller au-delà de recommandations standardisées en proposant une personnalisation fondée sur les comportements réels des utilisateurs. Cette approche pourrait contribuer à améliorer la pertinence des recommandations, à renforcer l’adéquation des objectifs proposés aux différents profils et, plus largement, à favoriser une expérience utilisateur davantage adaptée aux habitudes individuelles.
+
+Limites. Ces conclusions reposent sur 32 utilisateurs suivis pendant environ un mois (avril–mai 2016), sans information démographique, et qui ne sont pas des clientes Bellabeat. Les segments comptent entre 1 et 12 utilisateurs : ils indiquent des pistes à tester, pas des résultats généralisables. Une validation sur les données propres à Bellabeat serait nécessaire avant tout déploiement.
 
 ---
 
