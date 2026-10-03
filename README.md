@@ -55,7 +55,7 @@ Nous cherchons à **identifier des opportunités en dégageant des tendances dan
 - **Organisation :** chaque fichier CSV est structuré en lignes et en colonnes. Selon les fichiers, la granularité est le jour, l'heure, la minute ou la seconde.
 - **Modèle conceptuel des données (MCD) :**
 
-![Modèle conceptuel des données](figures/mcd.png)
+![Modèle conceptuel des données](bellabeat-case-study/figures/mcd.png)
 
 ### 2.2 Biais et crédibilité
 
